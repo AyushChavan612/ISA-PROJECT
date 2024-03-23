@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">
+            <h1>Safety Helmet Monitoring System</h1>
+        </div>
+        <div class="inner_nav">
+            <ul>
+                <li><button id="mapButton" class="map-button" onclick="openMapPage()">Map</button></li>
+                <li><a href="#" class="button">About</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Filter by CO2</button>
+                    <div class="dropdown-content">
+                        <a href="#">100</a>
+                        <a href="#">500</a>
+                        <a href="#">550</a>
+                        <a href="#">600</a>
+                        <a href="#">650</a>
+                        <a href="#">700</a>
+                        <a href="#">750</a>
+                        <a href="#">800</a>
+                        <a href="#">850</a>
+                        <a href="#">900</a>
+                        <a href="#">1000</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Filter by Heart Rate</button>
+                    <div class="dropdown-content">
+                        <a href="#">30</a>
+                        <a href="#">40</a>
+                        <a href="#">50</a>
+                        <a href="#">60</a>
+                        <a href="#">70</a>
+                        <a href="#">80</a>
+                        <a href="#">90</a>
+                        <a href="#">100</a>
+                        <a href="#">110</a>
+                        <a href="#">120</a>
+                        <a href="#">130</a>
+                        <a href="#">140</a>
+                        <a href="#">150</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sensor-flex-container">
+        <div class="worker-box" id="realSensorBox">
+            <h2>HELMET 1</h2>
+            <p>Distance: <span id="realDistance"></span></p>
+            <p>CO2 Level: <span class="co2-level" id="realCO2Level"></span></p>
+            <p>Force: <span id="realForce"></span></p>
+            <p>Temperature: <span id="realTemp"></span></p>
+        </div>
+
+        <div class="worker-box" id="dummySensorBox1">
+            <h2>HELMET 2</h2>
+            <p>Distance: <span id="dummyDistance1"></span></p>
+            <p>CO2 Level: <span class="co2-level" id="dummyCO2Level1"></span></p>
+            <p>Force: <span id="dummyForce1"></span></p>
+            <p>Temperature: <span id="dummyTemp1"></span></p>
+        </div>
+
+        <div class="worker-box" id="dummySensorBox2">
+            <h2>HELMET 3</h2>
+            <p>Distance: <span id="dummyDistance2"></span></p>
+            <p>CO2 Level: <span class="co2-level" id="dummyCO2Level2"></span></p>
+            <p>Force: <span id="dummyForce2"></span></p>
+            <p>Temperature: <span id="dummyTemp2"></span></p>
+        </div>
+    </div>
+
+    <div class="sensor-flex-container">
+        <div class="worker-box" id="dummySensorBox3">
+            <h2>HELMET 4</h2>
+            <p>Distance: <span id="dummyDistance3"></span></p>
+            <p>CO2 Level: <span class="co2-level" id="dummyCO2Level3"></span></p>
+            <p>Force: <span id="dummyForce3"></span></p>
+            <p>Temperature: <span id="dummyTemp3"></span></p>
+        </div>
+
+        <div class="worker-box" id="dummySensorBox4">
+            <h2>HELMET 5</h2>
+            <p>Distance: <span id="dummyDistance4"></span></p>
+            <p>CO2 Level: <span class="co2-level" id="dummyCO2Level4"></span></p>
+            <p>Force: <span id="dummyForce4"></span></p>
+            <p>Temperature: <span id="dummyTemp4"></span></p>
+        </div>
+
+        <div class="worker-box" id="dummySensorBox5">
+            <h2>HELMET 6</h2>
+            <p>Distance: <span id="dummyDistance5"></span></p>
+            <p>CO2 Level: <span class="co2-level" id="dummyCO2Level5"></span></p>
+            <p>Force: <span id="dummyForce5"></span></p>
+            <p>Temperature: <span id="dummyTemp5"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="box_footer">
+            <div>
+                <h2>Our Social Media Handles</h2>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/your-instagram-handle" target="_blank"><img src="Insta.jpg" alt="Instagram"></a>
+                <a href="https://www.facebook.com/your-facebook-handle" target="_blank"><img src="Facebook.jpg" alt="Facebook"></a>
+                <a href="https://www.twitter.com/your-twitter-handle" target="_blank"><img src="Twitter.jpg" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/feed/"><img src="LinkedIn.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
